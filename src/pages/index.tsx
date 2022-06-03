@@ -69,7 +69,7 @@ const TopPage: React.FC<PageProps> = ({ location }) => {
             />
           </BookCover>
           <BookCover>
-            <Button href='https://repos.kss-pc.club/book-v.pdf'>PDF で読む</Button>
+            <Button href='https://repos.kss-pc.club/book-2022/book-v.pdf'>PDF で読む</Button>
           </BookCover>
         </Container>
       </Layout>
