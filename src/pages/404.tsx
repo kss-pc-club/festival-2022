@@ -5,7 +5,7 @@ import SEO from "src/utils/seo"
 
 const NotFoundPage: React.FC<PageProps> = ({ location }) => (
   <React.Fragment>
-    <Layout>
+    <Layout location={location}>
       <SEO title="404: Not Found" />
       <h1>Not Found</h1>
       <p>お探しのページは見つかりませんでした。</p>
