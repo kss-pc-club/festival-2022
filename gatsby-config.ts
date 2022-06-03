@@ -1,3 +1,5 @@
+import type { GatsbyConfig } from 'gatsby'
+
 const siteTitle = `Festival`;
 const siteUrl = `https://festival.kss-pc.club`;
 const siteDescription = `Web pages for school festivals`;
@@ -22,15 +24,20 @@ const siteMetadata = {
   },
 };
 
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata,
   plugins: [
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-lodash`,
+    `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-root-import`,
     /*
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,19 +47,6 @@ module.exports = {
       },
     },
     */
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          "@src": "src",
-          "@components": "src/components",
-          "@pages": "src/pages",
-          "@styles": "src/styles",
-          "@utils": "src/utils",
-        },
-        extensions: ["js", "jsx", "ts", "tsx"],
-      }
-    },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
@@ -79,3 +73,5 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+export default config

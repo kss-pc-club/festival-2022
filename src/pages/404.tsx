@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, PageProps } from "gatsby"
-import Layout from "@components/layout"
-import SEO from "@utils/seo"
+import Layout from "src/components/layout"
+import SEO from "src/utils/seo"
 
 const NotFoundPage: React.FC<PageProps> = ({ location }) => (
   <React.Fragment>

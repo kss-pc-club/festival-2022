@@ -22,12 +22,9 @@
     "assumeChangesOnlyAffectDirectDependencies": true,
 
     "baseUrl": ".",
+    "types": ["@emotion/react/types/css-prop"],
     "paths": {
-      "src/*": ["./src/*"],
-      "@components/*": ["./src/components/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@utils/*": ["./src/utils/*"]
+      "src/*": ["./src/*"]
     },
     "typeRoots": ["src/types", "node_modules/@types"]
   },
@@ -37,7 +34,5 @@
     "fallbackPolling": "dynamicPriority"
   },
   "exclude": ["node_modules", "public", ".cache"],
-  "include": [  
-    "./src/**/*"
-  ]  
+  "include": ["./src/**/*"]
 }
